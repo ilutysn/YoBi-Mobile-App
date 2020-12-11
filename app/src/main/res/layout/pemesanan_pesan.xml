@@ -10,7 +10,9 @@
         android:id="@+id/background_pemesanan_pesan"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:srcCompat="@drawable/ic_pemesanan_pesan" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/ic_pemesanan_pesan"
+        tools:layout_editor_absoluteX="-16dp" />
 
     <Button
         android:id="@+id/konfirmasi_bank"
@@ -18,13 +20,104 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="610dp"
         android:background="@android:color/white"
-        android:text="pesan"
-        android:textColor="@color/white"
+        android:text="Pesan"
+        android:textAllCaps="false"
 
+        android:textColor="@color/white"
         app:backgroundTint="@color/black"
         app:elevation="10px"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/background_pemesanan_pesan"
         app:layout_constraintTop_toTopOf="@+id/background_pemesanan_pesan" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="88dp"
+        android:text="Rabu, 07 Oktober 2020, 06.00, 2 Jam, 1 Sepeda"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView33"
+        android:layout_width="417dp"
+        android:layout_height="286dp"
+        android:layout_marginTop="107dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_sepeda_2_foreground" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginBottom="319dp"
+        android:text="Polygon Maze 20"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="195dp"
+        android:text="1"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginBottom="214dp"
+        android:text="Rp 20.000"
+        android:textColor="#040404"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="87dp"
+        android:layout_marginBottom="195dp"
+        android:text="per jam"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="19dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/material_on_background_disabled"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="18dp"
+        android:layout_height="15dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="200dp"
+        android:background="@color/material_on_background_disabled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_plus" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

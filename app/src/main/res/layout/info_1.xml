@@ -11,66 +11,80 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:srcCompat="@drawable/ic_info_1"
-        tools:layout_editor_absoluteX="-75dp"
+        tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/map_icon"
         android:layout_width="215dp"
         android:layout_height="179dp"
-        app:srcCompat="@mipmap/ic_map_foreground"
-        tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="185dp" />
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="185dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_map_foreground" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/black_clean_icon"
         android:layout_width="49dp"
         android:layout_height="40dp"
-        app:srcCompat="@mipmap/ic_clean_foreground"
-        tools:layout_editor_absoluteX="264dp"
-        tools:layout_editor_absoluteY="198dp" />
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="198dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_clean_foreground" />
 
     <ImageView
-        android:id="@+id/imageView14"
+        android:id="@+id/dark_pink_circle"
         android:layout_width="10dp"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_pink_dark"
-        tools:layout_editor_absoluteX="49dp"
-        tools:layout_editor_absoluteY="643dp" />
+        android:layout_marginStart="49dp"
+        android:layout_marginBottom="78dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_pink_dark" />
 
     <ImageView
-        android:id="@+id/imageView15"
+        android:id="@+id/light_pink_circle_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_pink"
-        tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="643dp" />
+        android:layout_marginStart="98dp"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_pink" />
 
     <ImageView
-        android:id="@+id/imageView17"
+        android:id="@+id/light_pink_circle_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_pink"
-        tools:layout_editor_absoluteX="72dp"
-        tools:layout_editor_absoluteY="643dp" />
+        android:layout_marginStart="72dp"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_pink" />
 
-    <Button
+    <ImageButton
         android:id="@+id/skip_info_1"
-        android:layout_width="104dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="620dp"
+        android:layout_width="89dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="284dp"
+        android:layout_marginBottom="56dp"
+        android:background="@color/material_on_background_disabled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/black_button" />
 
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/rounded_corner"
-
-        android:backgroundTint="@color/black"
-        android:text="skip"
+    <TextView
+        android:id="@+id/text_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="312dp"
+        android:layout_marginBottom="65dp"
+        android:text="S K I P"
         android:textColor="@color/white"
-        app:backgroundTint="@color/black"
-        app:elevation="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.962"
-        app:layout_constraintStart_toStartOf="@+id/background_info_1"
-        app:layout_constraintTop_toTopOf="@+id/background_info_1" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

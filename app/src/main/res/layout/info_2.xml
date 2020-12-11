@@ -11,57 +11,70 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:srcCompat="@drawable/ic_info_2"
-        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
 
     <ImageView
-        android:id="@+id/imageView19"
+        android:id="@+id/scan_qr_code_icon"
         android:layout_width="195dp"
         android:layout_height="178dp"
-        app:srcCompat="@mipmap/ic_qr_code_foreground"
-        tools:layout_editor_absoluteX="108dp"
-        tools:layout_editor_absoluteY="154dp" />
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="154dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_qr_code_foreground" />
 
-    <Button
+    <ImageButton
         android:id="@+id/skip_info_2"
-        android:layout_width="104dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="620dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/rounded_corner"
+        android:layout_width="89dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="284dp"
+        android:layout_marginBottom="56dp"
+        android:background="@color/material_on_background_disabled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/black_button" />
 
-        android:backgroundTint="@color/black"
-        android:text="skip"
+    <TextView
+        android:id="@+id/text_skip_info_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="312dp"
+        android:layout_marginBottom="65dp"
+        android:text="S K I P"
         android:textColor="@color/white"
-        app:backgroundTint="@color/black"
-        app:elevation="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.962"
-        app:layout_constraintStart_toStartOf="@+id/background_info_2"
-        app:layout_constraintTop_toTopOf="@+id/background_info_2" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView20"
+        android:id="@+id/dark_pink_circle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_pink_dark"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="571dp" />
+        android:layout_marginStart="72dp"
+        android:layout_marginBottom="87dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_pink_dark" />
 
     <ImageView
-        android:id="@+id/imageView21"
+        android:id="@+id/light_pink_circle_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_pink"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="502dp" />
+        android:layout_marginStart="47dp"
+        android:layout_marginBottom="87dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_pink" />
 
     <ImageView
-        android:id="@+id/imageView22"
+        android:id="@+id/light_pink_circle_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_pink"
-        tools:layout_editor_absoluteX="67dp"
-        tools:layout_editor_absoluteY="549dp" />
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="87dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_pink" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

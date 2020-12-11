@@ -29,12 +29,14 @@
         app:srcCompat="@mipmap/ic_icon_yobi_foreground" />
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/clean_icon"
         android:layout_width="54dp"
         android:layout_height="52dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="324dp"
         android:rotation="25"
-        app:srcCompat="@mipmap/ic_stars_foreground"
-        tools:layout_editor_absoluteX="279dp"
-        tools:layout_editor_absoluteY="355dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@mipmap/ic_stars_foreground" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

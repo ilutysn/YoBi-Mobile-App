@@ -10,10 +10,12 @@
         android:id="@+id/background_pemesanan_kunci_sepeda"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:srcCompat="@drawable/ic_pemesanan_kunci_sepeda"/>
+        app:srcCompat="@drawable/ic_pemesanan_kunci_sepeda"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <Button
-        android:id="@+id/konfirmasi_bank"
+        android:id="@+id/scan_qr_code"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="610dp"
@@ -26,5 +28,62 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/background_pemesanan_kunci_sepeda"
         app:layout_constraintTop_toTopOf="@+id/background_pemesanan_kunci_sepeda" />
+
+    <TextView
+        android:id="@+id/nomor_sepeda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="244dp"
+        android:text="75"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/model_sepeda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="202dp"
+        android:text="Polygon maze 2"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/warna_sepeda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="161dp"
+        android:text="White"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/back_pemesanan_kunci_sepeda"
+        android:layout_width="19dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/material_on_background_disabled"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back" />
+
+    <ImageView
+        android:id="@+id/yobi_logo"
+        android:layout_width="225dp"
+        android:layout_height="199dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="143dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_iconyobi_foreground" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

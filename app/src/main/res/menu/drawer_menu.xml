@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_photo_profile"
+                android:icon="@mipmap/ic_foto_profil_foreground"
+                android:title="Fahriza Karina" />
+        </menu>
+    </item>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_beranda"
+            android:icon="@mipmap/ic_icon_home_foreground"
+            android:title="Beranda" />
+        <item
+            android:id="@+id/nav_profil"
+            android:icon="@mipmap/ic_icon_user_foreground"
+            android:title="Profil" />
+        <item
+            android:id="@+id/nav_pemesanan"
+            android:icon="@mipmap/ic_icon_kategori_foreground"
+            android:title="Pemesanan" />
+        <item
+            android:id="@+id/nav_perjalanan"
+            android:icon="@mipmap/ic_icon_bike_foreground"
+            android:title="Perjalananku" />
+        <item
+            android:id="@+id/nav_kategori"
+            android:icon="@mipmap/ic_icon_kategori_foreground"
+            android:title="Kategori Sepeda" />
+        <item
+            android:id="@+id/nav_bintangku"
+            android:icon="@mipmap/ic_icon_black_star_foreground"
+            android:title="Bintangku" />
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@mipmap/ic_icon_email_foreground"
+            android:title="Chat" />
+    </group>
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@mipmap/ic_icon_logout_foreground"
+                android:title="Logout" />
+        </menu>
+    </item>
+</menu>

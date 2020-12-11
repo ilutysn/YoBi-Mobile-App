@@ -7,19 +7,132 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView12"
+        android:id="@+id/background_beranda"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:srcCompat="@drawable/ic_beranda" />
+        app:srcCompat="@drawable/ic_beranda"
+        tools:layout_editor_absoluteX="-53dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <TextView
         android:id="@+id/lihat_lebih_banyak"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="248dp"
         android:text="lihat lebih banyak"
-        android:textColor="@color/purple_200"
-        tools:layout_editor_absoluteX="256dp"
-        tools:layout_editor_absoluteY="464dp" />
+        android:textColor="#CBB66297"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView34"
+        android:layout_width="160dp"
+        android:layout_height="136dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_iconyobi_foreground" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="86dp"
+        android:text="Hai Fahriza"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="212dp"
+        android:text="Rp 20.000"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="75dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="204dp"
+
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/black"
+
+        android:text="Top up"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        app:backgroundTint="@color/black"
+        app:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="@+id/background_beranda"
+        app:layout_constraintTop_toTopOf="@+id/background_beranda" />
+
+    <ImageView
+        android:id="@+id/imageView38"
+        android:layout_width="63dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="197dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_beranda_wallet_foreground" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/material_on_background_disabled"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_navbar" />
+
+    <ImageButton
+        android:id="@+id/imageButton12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="160dp"
+        android:background="@color/material_on_background_disabled"
+        android:rotation="180"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back_reverse" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="292dp"
+        android:layout_height="161dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginBottom="296dp"
+        android:background="@color/material_on_background_disabled"
+        android:foreground="@mipmap/ic_beranda_bank_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/ic_beranda_sepeda_foreground" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="316dp"
+        android:layout_height="212dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/material_on_background_disabled"
+        android:foreground="@mipmap/ic_beranda_sepeda_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/ic_beranda_sepeda_foreground" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

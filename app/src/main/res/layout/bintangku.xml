@@ -7,17 +7,43 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/background_bintangku"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:srcCompat="@drawable/ic_bintangku"/>
+        app:srcCompat="@drawable/ic_bintangku"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="245dp"
-        android:layout_height="90dp"
-        android:hint="Masukkan ulasan Anda"
-        tools:layout_editor_absoluteX="90dp"
-        tools:layout_editor_absoluteY="465dp" />
+    <TextView
+        android:id="@+id/ulasan"
+        android:layout_width="214dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="103dp"
+        android:layout_marginBottom="216dp"
+        android:text="Aplikasi ini sangat memudahkan saya yang tidak punya sepeda"
+        android:textColor="#222121"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="337dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/pop_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/material_on_background_disabled"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_navbar" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

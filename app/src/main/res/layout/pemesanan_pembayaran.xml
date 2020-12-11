@@ -1,13 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/background_pemesanan_pembayaran"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
         app:srcCompat="@drawable/ic_pemesanan_pembayaran" />
-</LinearLayout>
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginBottom="275dp"
+        android:text="Rp 40.000"
+        android:textColor="#000000"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/konfirmasi_bank"
+        android:layout_width="171dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="544dp"
+        android:layout_marginEnd="120dp"
+        android:background="@android:color/white"
+
+        android:text="Tunai"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/black"
+        app:elevation="10px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/background_pemesanan_pembayaran"
+        app:layout_constraintTop_toTopOf="@+id/background_pemesanan_pembayaran" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

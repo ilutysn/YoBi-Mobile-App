@@ -10,64 +10,81 @@
         android:id="@+id/background_info_3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:srcCompat="@drawable/ic_info_3" />
+        app:srcCompat="@drawable/ic_info_3"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="112dp" />
 
     <ImageView
-        android:id="@+id/imageView13"
+        android:id="@+id/money_icon"
         android:layout_width="175dp"
         android:layout_height="161dp"
-        app:srcCompat="@mipmap/ic_indonesian_rupiah_foreground"
-        tools:layout_editor_absoluteX="118dp"
-        tools:layout_editor_absoluteY="199dp" />
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="199dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_indonesian_rupiah_foreground" />
 
     <ImageView
-        android:id="@+id/imageView16"
+        android:id="@+id/black_clean_icon"
         android:layout_width="45dp"
         android:layout_height="46dp"
-        app:srcCompat="@mipmap/ic_clean_foreground"
-        tools:layout_editor_absoluteX="104dp"
-        tools:layout_editor_absoluteY="167dp" />
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="167dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_clean_foreground" />
 
-    <Button
+    <ImageView
+        android:id="@+id/light_pink_circle_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginBottom="63dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_pink" />
+
+    <ImageView
+        android:id="@+id/light_pink_circle_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginBottom="63dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_pink" />
+
+    <ImageView
+        android:id="@+id/dark_pink_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginBottom="63dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_pink_dark" />
+
+    <ImageButton
         android:id="@+id/skip_info_3"
-        android:layout_width="104dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="620dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/rounded_corner"
+        android:layout_width="89dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="284dp"
+        android:layout_marginBottom="56dp"
+        android:background="@color/material_on_background_disabled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/black_button" />
 
-        android:backgroundTint="@color/black"
-        android:text="skip"
+    <TextView
+        android:id="@+id/text_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="312dp"
+        android:layout_marginBottom="65dp"
+        android:text="S K I P"
         android:textColor="@color/white"
-        app:backgroundTint="@color/black"
-        app:elevation="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.962"
-        app:layout_constraintStart_toStartOf="@+id/background_info_3"
-        app:layout_constraintTop_toTopOf="@+id/background_info_3" />
-
-    <ImageView
-        android:id="@+id/imageView18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_pink"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="531dp" />
-
-    <ImageView
-        android:id="@+id/imageView23"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_pink"
-        tools:layout_editor_absoluteX="106dp"
-        tools:layout_editor_absoluteY="369dp" />
-
-    <ImageView
-        android:id="@+id/imageView24"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_pink_dark"
-        tools:layout_editor_absoluteX="126dp"
-        tools:layout_editor_absoluteY="486dp" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

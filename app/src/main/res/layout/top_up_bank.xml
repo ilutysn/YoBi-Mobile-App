@@ -10,30 +10,109 @@
         android:id="@+id/background_top_up_bank"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:srcCompat="@drawable/ic_pilih_bank" />
+        app:srcCompat="@drawable/ic_pilih_bank"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
-    <ListView
-        android:id="@+id/list_bank"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        app:layout_constraintBottom_toTopOf="@+id/background_top_up_bank"></ListView>
-
-
-    <Button
+    <ImageButton
         android:id="@+id/konfirmasi_bank"
+        android:layout_width="122dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginBottom="140dp"
+        android:background="@color/material_on_background_disabled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/black_button" />
+
+    <TextView
+        android:id="@+id/text_konfirmasi_bank"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="610dp"
-        android:background="@android:color/white"
+        android:layout_marginStart="164dp"
+        android:layout_marginBottom="152dp"
         android:text="Konfirmasi"
         android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        app:backgroundTint="@color/black"
-        app:elevation="10px"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/background_top_up_bank"
-        app:layout_constraintTop_toTopOf="@+id/background_top_up_bank" />
+    <TextView
+        android:id="@+id/bank_btn"
+        android:layout_width="96dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="226dp"
+        android:text="Bank BTN"
+        android:textColor="#000000"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bank_mandiri"
+        android:layout_width="96dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="311dp"
+        android:text="Bank Mandiri"
+        android:textColor="#000000"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bank_bri"
+        android:layout_width="96dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="271dp"
+        android:text="Bank BRI"
+        android:textColor="#000000"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bank_bca"
+        android:layout_width="96dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="356dp"
+        android:text="Bank BCA"
+        android:textColor="#000000"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bank_jatim"
+        android:layout_width="96dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="398dp"
+        android:text="Bank Jatim"
+        android:textColor="#000000"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/back_bank"
+        android:layout_width="19dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/material_on_background_disabled"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

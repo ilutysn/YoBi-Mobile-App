@@ -13,17 +13,21 @@
         android:scaleType="centerCrop"
         android:visibility="visible"
         app:srcCompat="@drawable/ic_login"
- />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <EditText
         android:id="@+id/input_email"
-        android:layout_width="240dp"
-        android:layout_height="49dp"
+        android:layout_width="309dp"
+        android:layout_height="50dp"
         android:layout_marginTop="368dp"
         android:background="@drawable/rounded_corner"
         android:backgroundTint="@color/white"
         android:ems="10"
+        android:hint="                Username/No. Telp"
         android:inputType="textEmailAddress"
+        android:textColor="#000000"
+        android:textSize="14dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="@+id/backgroundYobi"
@@ -31,74 +35,99 @@
 
     <EditText
         android:id="@+id/input_password"
-        android:layout_width="241dp"
-        android:layout_height="49dp"
+        android:layout_width="305dp"
+        android:layout_height="50dp"
         android:layout_marginTop="448dp"
         android:background="@drawable/rounded_corner"
         android:backgroundTint="@color/white"
         android:ems="10"
+        android:hint="                Password"
         android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textSize="14dp"
         app:layout_constraintEnd_toEndOf="@+id/backgroundYobi"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="@+id/backgroundYobi"
         app:layout_constraintTop_toTopOf="@+id/backgroundYobi" />
 
+    <ImageButton
+        android:id="@+id/login"
+        android:layout_width="122dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginBottom="140dp"
+        android:background="@color/material_on_background_disabled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/black_button" />
 
-    <Button
-        android:id="@+id/Login"
-        android:layout_width="104dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="532dp"
-
-        android:background="@drawable/rounded_corner"
-        android:backgroundTint="@color/black"
-
-        android:text="Login"
-        android:textColor="@color/white"
-        app:backgroundTint="@color/black"
-        app:elevation="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="@+id/backgroundYobi"
-        app:layout_constraintTop_toTopOf="@+id/backgroundYobi" />
-
-    <LinearLayout
+    <TextView
+        android:id="@+id/text_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Login">
-
-
-    </LinearLayout>
+        android:layout_marginStart="184dp"
+        android:layout_marginBottom="152dp"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/register_link"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="98dp"
+        android:layout_marginBottom="79dp"
         android:onClick="register"
         android:text="Daftar disini"
         android:textColor="@color/black"
-        tools:layout_editor_absoluteX="238dp"
-        tools:layout_editor_absoluteY="614dp" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/akun"
+        android:id="@+id/belum_memiliki_akun"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
+        android:layout_marginStart="86dp"
+        android:layout_marginBottom="79dp"
         android:text="Belum memiliki akun? "
-        tools:layout_editor_absoluteX="86dp"
-        tools:layout_editor_absoluteY="614dp" />
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView25"
+        android:id="@+id/yobi_logo"
         android:layout_width="260dp"
         android:layout_height="208dp"
-        app:srcCompat="@mipmap/ic_iconyobi_foreground"
-        tools:layout_editor_absoluteX="75dp"
-        tools:layout_editor_absoluteY="88dp" />
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="88dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_iconyobi_foreground" />
+
+    <ImageView
+        android:id="@+id/user_icon"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="322dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/ic_icon_user_foreground" />
+
+    <ImageView
+        android:id="@+id/password_icon"
+        android:layout_width="68dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="222dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/ic_icon_password_foreground" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

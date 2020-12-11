@@ -5,17 +5,104 @@
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <ImageView
-        android:id="@+id/backgroundYobi"
+        android:id="@+id/background_register"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         android:visibility="visible"
         app:srcCompat="@drawable/ic_daftar"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-103dp" />
+        tools:layout_editor_absoluteY="-16dp" />
 
+    <EditText
+        android:id="@+id/email_field"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="268dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/white"
+        android:ems="15"
+        android:hint="     No. Telp"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/background_register"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <EditText
+        android:id="@+id/name_field"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="360dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/white"
+        android:ems="15"
+        android:hint="     Nama"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/background_register"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <EditText
+        android:id="@+id/password_field"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="464dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/white"
+        android:ems="15"
+        android:hint="     Password"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/background_register"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/Daftar"
+        android:layout_width="122dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginBottom="104dp"
+        android:background="@color/material_on_background_disabled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/black_button" />
+
+    <TextView
+        android:id="@+id/tex_daftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="184dp"
+        android:layout_marginBottom="116dp"
+        android:text="Daftar"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/back_daftar"
+        android:layout_width="21dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/material_on_background_disabled"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back" />
+
+    <ImageView
+        android:id="@+id/yobi_logo"
+        android:layout_width="239dp"
+        android:layout_height="180dp"
+        android:layout_marginEnd="86dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_iconyobi_foreground" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
