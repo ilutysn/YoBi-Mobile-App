@@ -2,14 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
-    <item android:title="">
-        <menu>
-            <item
-                android:id="@+id/nav_photo_profile"
-                android:icon="@mipmap/ic_foto_profil_foreground"
-                android:title="Fahriza Karina" />
-        </menu>
-    </item>
+
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_beranda"
@@ -21,7 +14,7 @@
             android:title="Profil" />
         <item
             android:id="@+id/nav_pemesanan"
-            android:icon="@mipmap/ic_icon_kategori_foreground"
+            android:icon="@mipmap/ic_icon_pemesanan_foreground"
             android:title="Pemesanan" />
         <item
             android:id="@+id/nav_perjalanan"
@@ -32,6 +25,9 @@
             android:icon="@mipmap/ic_icon_kategori_foreground"
             android:title="Kategori Sepeda" />
         <item
+            android:id="@+id/nav_vector3"
+            android:title="" />
+        <item
             android:id="@+id/nav_bintangku"
             android:icon="@mipmap/ic_icon_black_star_foreground"
             android:title="Bintangku" />
@@ -39,13 +35,12 @@
             android:id="@+id/nav_chat"
             android:icon="@mipmap/ic_icon_email_foreground"
             android:title="Chat" />
+        <item
+            android:id="@+id/nav_vector4"
+            android:title="" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@mipmap/ic_icon_logout_foreground"
+            android:title="Logout" />
     </group>
-    <item android:title="">
-        <menu>
-            <item
-                android:id="@+id/nav_logout"
-                android:icon="@mipmap/ic_icon_logout_foreground"
-                android:title="Logout" />
-        </menu>
-    </item>
 </menu>

@@ -1,7 +1,6 @@
 package com.tugas.yobimobile;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -22,17 +21,15 @@ public class SplashActivity extends AppCompatActivity {
                 new Runnable() {
                     @Override
                     public void run() {
-                        imageAnim.setVisibility(1);
+                        imageAnim.setVisibility('1');
                     }
                 }, 800
 
         );
-
-
         handler_for_mainmenu.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
+                Intent intent = new Intent(SplashActivity.this, Info1Activity.class);
                 startActivity(intent);
                 finish();
             }
