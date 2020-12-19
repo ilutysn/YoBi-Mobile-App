@@ -44,6 +44,7 @@
             </intent-filter>
         </activity>
 
+
         <activity
             android:name=".NavBarActivity"
             android:theme="@style/AppTheme.NoActionBar"
@@ -54,8 +55,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".Scanner" />
-
-
+        <activity android:name=".MainActivity"
+            android:theme="@style/AppTheme">
+        </activity>
     </application>
 
 </manifest>
