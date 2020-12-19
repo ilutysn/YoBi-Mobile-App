@@ -19,66 +19,72 @@
         android:id="@+id/saldo_10k"
         android:layout_width="104dp"
         android:layout_height="56dp"
+        android:layout_marginStart="92dp"
         android:layout_marginTop="284dp"
-        android:backgroundTint="@color/white"
 
+        android:backgroundTint="@color/white"
         android:text="Rp 10.000"
         android:textAllCaps="false"
         android:textColor="@color/black"
-        app:elevation="4dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.299"
-        app:layout_constraintStart_toStartOf="@+id/background_top_up_saldo"
-        app:layout_constraintTop_toTopOf="@+id/background_top_up_saldo" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <Button
         android:id="@+id/saldo_20k"
         android:layout_width="104dp"
         android:layout_height="56dp"
         android:layout_marginTop="284dp"
-        android:backgroundTint="@color/white"
+        android:layout_marginEnd="81dp"
 
+        android:backgroundTint="@color/white"
         android:text="Rp 20.000"
         android:textAllCaps="false"
         android:textColor="@color/black"
-        app:elevation="4dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.736"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/background_top_up_saldo"
-        app:layout_constraintTop_toTopOf="@+id/background_top_up_saldo" />
-
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/saldo_50k"
         android:layout_width="104dp"
         android:layout_height="56dp"
+        android:layout_marginStart="92dp"
         android:layout_marginTop="364dp"
-        android:backgroundTint="@color/white"
 
+        android:layout_marginBottom="311dp"
+        android:backgroundTint="@color/white"
         android:text="Rp 50.000"
         android:textAllCaps="false"
         android:textColor="@color/black"
-        app:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.299"
-        app:layout_constraintStart_toStartOf="@+id/background_top_up_saldo"
-        app:layout_constraintTop_toTopOf="@+id/background_top_up_saldo" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background_top_up_saldo"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/saldo_100k"
         android:layout_width="104dp"
         android:layout_height="56dp"
         android:layout_marginTop="364dp"
-        android:backgroundTint="@color/white"
+        android:layout_marginEnd="81dp"
 
+        android:layout_marginBottom="311dp"
+        android:backgroundTint="@color/white"
         android:text="Rp 100.000"
         android:textAllCaps="false"
         android:textColor="@color/black"
-        app:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.736"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/background_top_up_saldo"
-        app:layout_constraintTop_toTopOf="@+id/background_top_up_saldo" />
+        app:layout_constraintTop_toTopOf="@+id/background_top_up_saldo"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/pilih_metode_pembayaran"
