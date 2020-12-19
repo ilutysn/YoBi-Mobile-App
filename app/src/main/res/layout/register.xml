@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".Register">
 
     <ImageView
         android:id="@+id/background_register"
@@ -61,8 +62,9 @@
         app:layout_constraintStart_toStartOf="@+id/background_register"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <ImageButton
-        android:id="@+id/Daftar"
+        android:id="@+id/submit"
         android:layout_width="122dp"
         android:layout_height="45dp"
         android:layout_marginStart="144dp"

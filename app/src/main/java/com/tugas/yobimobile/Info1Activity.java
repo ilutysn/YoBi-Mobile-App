@@ -10,11 +10,8 @@ public class Info1Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // langsung pindah ke MainActivity atau activity lain 
-        // begitu memasuki splash screen ini
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, Info2Activity.class);
         startActivity(intent);
         finish();
     }
-
 }

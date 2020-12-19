@@ -10,22 +10,29 @@
         android:id="@+id/background_pemesanan_selesai"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:srcCompat="@drawable/ic_pemesanan_selesai" />
+        app:srcCompat="@drawable/ic_pemesanan_selesai"
+        tools:layout_editor_absoluteX="-101dp"
+        tools:layout_editor_absoluteY="16dp" />
 
     <Button
         android:id="@+id/selesai"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
         android:layout_marginTop="610dp"
+        android:layout_marginBottom="73dp"
         android:background="@android:color/white"
+
         android:text="selesai"
         android:textColor="@color/white"
-
         app:backgroundTint="@color/black"
-        app:elevation="10px"
+        android:elevation="10px"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/background_pemesanan_selesai"
-        app:layout_constraintTop_toTopOf="@+id/background_pemesanan_selesai" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background_pemesanan_selesai"
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/yobi_logo"

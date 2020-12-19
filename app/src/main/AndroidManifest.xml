@@ -54,7 +54,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Scanner" />
-
+        <activity android:name=".Rating_Bar" />
 
     </application>
 
