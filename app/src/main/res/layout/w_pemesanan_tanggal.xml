@@ -33,15 +33,46 @@
         app:layout_constraintTop_toTopOf="@+id/background_pemesanan_tanggal"
         app:layout_constraintVertical_bias="1.0" />
 
-    <CalendarView
-        android:id="@+id/calendarView"
-        android:layout_width="229dp"
-        android:layout_height="217dp"
-        android:layout_marginStart="91dp"
-        android:layout_marginTop="356dp"
-        android:background="#FFF2C2"
+<!--    <CalendarView-->
+<!--        android:id="@+id/calendarView"-->
+<!--        android:layout_width="229dp"-->
+<!--        android:layout_height="217dp"-->
+<!--        android:layout_marginStart="91dp"-->
+<!--        android:layout_marginTop="356dp"-->
+<!--        android:background="#FFF2C2"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:text="TANGGAL"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="356dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/pink"
+        android:text="Pilih Tanggal"
+        android:textColor="#000000"
+        android:textColorLink="@color/purple_200"
+        app:backgroundTint="@color/pink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#0CEAE6E6"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="423dp" />
 
     <ImageButton
         android:id="@+id/imageButton9"
